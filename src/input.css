@@ -1,1 +1,85 @@
 @import "tailwindcss";
+
+@theme{
+    --color-primary: #0B735F;
+    --color-secondary: #384166;
+    --color-tertiary: #E3DBA9;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+@layer components{
+    .body{
+        @apply bg-green-50 text-gray-800 font-mono leading-relaxed;
+    }
+
+    .main{
+        @apply max-w-5xl mx-auto px-4 py-2;
+    }
+
+    .navbar{
+        @apply bg-primary text-white rounded-lg shadow-lg mb-8;
+    }
+
+    .nav-ul{
+        @apply flex justify-center gap-6 py-3 text-lg font-semibold;
+    }
+
+    .nav-hover{
+        @apply hover:text-yellow-300 transition;
+    }
+
+    .title{
+        @apply text-6xl font-['Mono'] text-primary ;
+    }
+
+    .h2{
+        @apply text-3xl font-bold text-primary;
+    }
+
+    .format-article{
+        @apply bg-white p-6 rounded-2xl shadow-lg my-2;
+    }
+    
+    .h3{
+        @apply text-2xl font-semibold text-primary mb-3;
+    }
+
+    .hr{
+        @apply border-t-4 border border-tertiary w-24 mx-auto my-3
+    }
+
+    .ul{
+        @apply list-disc pl-6 space-y-2;
+    }
+
+    .ch3{
+        @apply text-3xl font-bold text-secondary mb-3;
+    }
+
+    .article{
+        @apply bg-white p-6 rounded-2xl shadow-lg space-y-4 mb-8;
+    }
+
+    .sch3{
+        @apply text-xl font-semibold text-primary;
+    }
+
+    .ol{
+        @apply list-decimal pl-6 space-y-2;
+    }
+
+    .nextbtn{
+        @apply bg-primary text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition;
+    }
+
+    .previousbtn{
+        @apply bg-gray-300 text-gray-800 px-5 py-2 rounded-full font-semibold hover:bg-gray-200 transition;
+    }
+
+    .figure-image{
+        @apply  mx-auto rounded-lg shadow mb-2 w-72 h-auto;
+    }
+}
